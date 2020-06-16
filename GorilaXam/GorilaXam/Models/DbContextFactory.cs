@@ -17,6 +17,7 @@ namespace GorilaXam.Models
             var optionsBuilder = new DbContextOptionsBuilder<LibraryDbContext>();
             optionsBuilder.UseSqlServer("Data Source = localhost; Initial Catalog=GorilaXam; Trusted_Connection=True; MultipleActiveResultSets=True");
             //optionsBuilder.UseSqlServer("Data Source=localhost;Database=GorilaXam;Integrated Security=True;");
+            //test
 
             return new LibraryDbContext(optionsBuilder.Options);
         }
